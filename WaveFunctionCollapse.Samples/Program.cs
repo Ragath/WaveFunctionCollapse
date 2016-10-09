@@ -14,8 +14,9 @@ static class Program
 	static void Main()
 	{
 		Random random = new Random();
-		var xdoc = new XmlDocument();
-		xdoc.Load("samples.xml");
+		var xdoc = new XmlDocument(); 
+
+        xdoc.Load("samples.xml");
 
 		int counter = 1;
 		foreach (XmlNode xnode in xdoc.FirstChild.ChildNodes)
